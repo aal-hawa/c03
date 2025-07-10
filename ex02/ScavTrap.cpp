@@ -2,7 +2,7 @@
 
 ScavTrap::ScavTrap() : ClapTrap()
 {
-	std::cout << "ScaveTrap defoult constructed" << std::endl;
+	std::cout << "ScaveTrap default constructed" << std::endl;
 }
 
 ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name)

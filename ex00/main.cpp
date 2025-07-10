@@ -2,8 +2,8 @@
 
 int main ()
 {
-	ClapTrap clap("CL4P-TP");
-	clap.attack("target dummy");
+	ClapTrap clap("user");
+	clap.attack("an enemy");
 	clap.takeDamage(3);
 	clap.beRepaired(5);
 	clap.takeDamage(15);

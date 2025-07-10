@@ -2,7 +2,10 @@
 
 ScavTrap::ScavTrap() : ClapTrap()
 {
-	std::cout << "ScaveTrap defoult constructed" << std::endl;
+	_hitPoints = 100;
+	_energyPoints = 50;
+	_attackDamage = 20;
+	std::cout << "ScavTrap default constructed" << std::endl;
 }
 
 ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name)
@@ -10,7 +13,7 @@ ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name)
 	_hitPoints = 100;
 	_energyPoints = 50;
 	_attackDamage = 20;
-	std::cout << "ScaveTrap " << _name << " constructed" << std::endl;
+	std::cout << "ScavTrap " << _name << " constructed" << std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other)

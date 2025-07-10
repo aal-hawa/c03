@@ -1,13 +1,13 @@
-NAME = ExThree
+NAME = ExTwo
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Wall -std=c++98
 
-SRC =  main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
+SRC =  main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp 
 OBJS = $(SRC:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-		$(CXX) $(OBJS) -o $(NAME)
+		$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@

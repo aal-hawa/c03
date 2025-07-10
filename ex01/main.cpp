@@ -2,7 +2,7 @@
 
 int main()
 {
-    ScavTrap scav("Serena");
+    ScavTrap scav("user");
 
     scav.attack("an enemy");
     scav.takeDamage(30);

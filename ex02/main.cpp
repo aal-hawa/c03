@@ -1,13 +1,13 @@
-#include "DiamondTrap.hpp"
+#include "FragTrap.hpp"
 
 int main()
 {
-    DiamondTrap d("Alpha");
+    FragTrap frag("user");
 
-    d.attack("Enemy");
-    d.takeDamage(30);
-    d.beRepaired(20);
-    d.whoAmI();
+    frag.attack("an enemy");
+    frag.takeDamage(30);
+    frag.beRepaired(20);
+    frag.highFivesGuys();
     
     return 0;
 }
