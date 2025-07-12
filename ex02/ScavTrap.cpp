@@ -23,6 +23,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& other)
 	if (this != &other) 
 	{
 		ClapTrap::operator=(other);
+		std::cout << "ScavTrap " << _name << " copy assignment operator called" << std::endl;
 	}
 	return *this;
 }
@@ -40,7 +41,7 @@ void ScavTrap::attack(const std::string& target)
 		return;
 	}
 	_energyPoints--;
-	std::cout << "ScavTrap " << _name << " fiercely attacks " << target
+	std::cout << "ScavTrap " << _name << " attacks " << target
               << ", causing " << _attackDamage << " points of damage!" << std::endl;;
 }
 

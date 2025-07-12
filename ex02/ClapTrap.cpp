@@ -1,11 +1,11 @@
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap() : _name(""), _hitPoints(10), _energyPoints(10), _attackDamage(0)
+ClapTrap::ClapTrap() : _name(""), _hitPoints(100), _energyPoints(50), _attackDamage(20)
 {
 	std::cout << "ClapTrap default constructed!" << std::endl;
 }
 
-ClapTrap::ClapTrap(const std::string& name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
+ClapTrap::ClapTrap(const std::string& name) : _name(name), _hitPoints(100), _energyPoints(50), _attackDamage(20)
 {
 	std::cout << "ClapTrap "<< _name << " constructed!" << std::endl;
 }
@@ -32,6 +32,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other)
 		_hitPoints = other._hitPoints;
 		_energyPoints = other._energyPoints;
 		_attackDamage = other._attackDamage;
+		std::cout << "ClapTrap " << _name << " copy assignment operator called" << std::endl;
 	}
 	return *this;
 }
